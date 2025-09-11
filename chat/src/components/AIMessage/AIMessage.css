@@ -1,0 +1,11 @@
+.ai-chat-message {
+  text-align: left;
+  margin-bottom: 50px;
+  min-height: 0;
+  transition: min-height 1s 1s;
+
+  &.fill {
+    min-height: calc(100vh - var(--chat-window-bottom-gap) - 200px);
+    transition: min-height 1s;
+  }
+}

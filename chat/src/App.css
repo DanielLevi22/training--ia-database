@@ -1,0 +1,17 @@
+:root {
+  --chat-window-bottom-gap: 120px;
+}
+
+#root {
+  position: relative;
+  box-sizing: border-box;
+
+  max-width: 800px;
+  width: 100%;
+  height: 100vh;
+
+  margin: 0 auto;
+  padding: 0 20px;
+
+  text-align: center;
+}

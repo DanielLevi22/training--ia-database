@@ -1,0 +1,30 @@
+.chat-window {
+  display: flex;
+  flex-direction: column;
+
+  box-sizing: border-box;
+  padding-top: 40px;
+
+  width: calc(100% + 15px);
+  height: calc(100vh - var(--chat-window-bottom-gap));
+  overflow-y: auto;
+
+  scrollbar-gutter: stable;
+  scrollbar-width: thin;
+  scrollbar-color: #606060 transparent;
+
+  &.reverse {
+    flex-direction: column-reverse;
+  }
+}
+
+.chat-content {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  width: 100%;
+
+  box-sizing: border-box;
+  padding: 0 10px;
+}

@@ -1,0 +1,35 @@
+:root {
+  --min-ball-width: 5px;
+  --max-ball-width: 20px;
+}
+
+.thinking-ball {
+  background-color: white;
+  border-radius: 100%;
+
+  animation-name: grow;
+  animation-duration: 0.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+.thinking-indicator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: var(--max-ball-width);
+  height: var(--max-ball-width);
+}
+
+@keyframes grow {
+  from {
+    width: var(--min-ball-width);
+    height: var(--min-ball-width);
+  }
+
+  to {
+    width: var(--max-ball-width);
+    height: var(--max-ball-width);
+  }
+}
